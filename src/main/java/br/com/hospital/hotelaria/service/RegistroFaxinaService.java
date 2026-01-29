@@ -1,5 +1,7 @@
 package br.com.hospital.hotelaria.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import br.com.hospital.hotelaria.dto.RegistroFaxinaRequest;
@@ -34,5 +36,9 @@ public class RegistroFaxinaService {
         registro.setDate(request.getData());
 
         return registroFaxinaRepository.save(registro);
+    }
+
+    public List<RegistroFaxina> listarTodos(){
+        return registroFaxinaRepository.findAll();
     }
 }

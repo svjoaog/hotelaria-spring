@@ -1,5 +1,7 @@
 package br.com.hospital.hotelaria.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +30,7 @@ public class RegistroFaxinaController {
     }
 
     @GetMapping
-    public String teste(){
-        return "Controller funcionando...";
+    public List<RegistroFaxina> listar(){
+        return registroFaxinaService.listarTodos();
     }
 }
