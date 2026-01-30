@@ -32,7 +32,7 @@ public class SetorService {
 
     public SetorResponse buscarSetor(Long id){
         Setor setor = setorRepository.findById(id)
-        .orElseThrow(() -> new RuntimeException("Área não encontrada"));
+            .orElseThrow(() -> new RuntimeException("Área não encontrada"));
 
         return toResponse(setor);
     }
@@ -60,6 +60,6 @@ public class SetorService {
         response.setId(setor.getId());
         response.setName(setor.getName());
 
-        return response;
+        return response;    
     }
 }
