@@ -2,8 +2,10 @@ package br.com.hospital.hotelaria.controller;
 
 import java.util.List;
 
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +17,7 @@ import br.com.hospital.hotelaria.entity.RegistroFaxina;
 import br.com.hospital.hotelaria.service.RegistroFaxinaService;
 import lombok.RequiredArgsConstructor;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/registro-faxinas")
 @RequiredArgsConstructor

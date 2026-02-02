@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import br.com.hospital.hotelaria.dto.SetorResponse;
 import br.com.hospital.hotelaria.service.SetorService;
 import lombok.Data;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/setores")
 @Data
