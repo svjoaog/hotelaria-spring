@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import api from "../api/axios";
-import { type Setor } from "../types/Setor";
+import api from "../../api/axios";
+import { type Setor } from "../../types/Setor";
 
 interface Props{
     setorSelecionado: Setor | null;
