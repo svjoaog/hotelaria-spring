@@ -28,7 +28,7 @@ export function SalaForm({salaSelecionada, onSucesso}: Props){
         }
     }, [salaSelecionada])
 
-    function salvar(e: React.FormEvent){
+    function salvar(e: React.SubmitEvent){
         e.preventDefault();
 
         const sala = {nome, setorId};

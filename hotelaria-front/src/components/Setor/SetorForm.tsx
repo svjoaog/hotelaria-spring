@@ -18,7 +18,7 @@ export function SetorForm({setorSelecionado, onSuccess}: Props){
         }
     }, [setorSelecionado]);
 
-    function salvar(e: React.FormEvent){
+    function salvar(e: React.SubmitEvent){
         e.preventDefault();
 
         if(setorSelecionado?.id){
